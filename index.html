@@ -664,11 +664,11 @@ html.rm .plate-h1 { transform: none !important; }
     </a>
     <button class="menu" id="menu" type="button" aria-label="Menu"><i></i><i></i></button>
     <ul class="links" id="links">
-      <li><a href="#consoles">Consoles</a></li>
-      <li><a href="#pc">PC Gear</a></li>
-      <li><a href="#audio">Audio</a></li>
-      <li><a href="#controllers">Controllers</a></li>
-      <li><a href="#deals">Deals</a></li>
+      <li><a href="shop.html?view=platforms">Consoles</a></li>
+      <li><a href="shop.html?platform=pc">PC Gear</a></li>
+      <li><a href="shop.html?category=headsets">Audio</a></li>
+      <li><a href="shop.html?category=controllers">Controllers</a></li>
+      <li><a href="shop.html?view=deals">Deals</a></li>
     </ul>
   </header>
   <div class="glyphs" aria-hidden="true">
@@ -700,14 +700,14 @@ html.rm .plate-h1 { transform: none !important; }
       <svg viewBox="0 0 26 26"><path d="M3 23 L23 3 M8 3 H23 V18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </div>
     <div class="cards" id="cards">
-      <a class="card" href="#consoles"><span class="art a1"></span><span class="lbl">Consoles</span></a>
-      <a class="card" href="#audio"><span class="art a2"></span><span class="lbl">Headsets</span></a>
-      <a class="card" href="#controllers"><span class="art a3"></span><span class="lbl">Controllers</span></a>
+      <a class="card" href="shop.html?view=platforms"><span class="art a1"></span><span class="lbl">Consoles</span></a>
+      <a class="card" href="shop.html?category=headsets"><span class="art a2"></span><span class="lbl">Headsets</span></a>
+      <a class="card" href="shop.html?category=controllers"><span class="art a3"></span><span class="lbl">Controllers</span></a>
     </div>
   </section>
 </main>
 <script type="module">
-import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js";
+import * as THREE from "./assets/three.module.js";
 
 const reduced = document.documentElement.classList.contains("rm");
 const stage = document.getElementById("stage");
